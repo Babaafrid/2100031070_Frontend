@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.app-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-row {
+  background-color: #f0f0f0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-cell {
+  border-bottom: 3px solid red;
+  background: aliceblue;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+.body-row {
+  transition: background-color 0.2s ease;
+}
+
+.body-row:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.body-row:hover {
+  background-color: #f1f1f1;
+}
+
+.body-cell {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.pagination {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination-info {
+  margin-right: 10px;
+}
+
+.page-size-select {
+  padding: 5px;
 }
